@@ -22,7 +22,7 @@ Whether you're an appreciator or a creator, ARTHUB provides an immersive space t
    <img src="https://img.shields.io/badge/chakraui-text?style=for-the-badge&logo=chakraui&color=204456" />
  <img src="https://img.shields.io/badge/HTML5-text?style=for-the-badge&logo=HTML5&color=2b3b35" />
   <img src="https://img.shields.io/badge/javascript-text?style=for-the-badge&logo=javascript&color=204456" />
-  <img src="https://img.shields.io/badge/node-text?style=for-the-badge&logo=node&color=204456" />
+  <img src="https://img.shields.io/badge/node-text?style=for-the-badge&logo=node.js&color=204456" />
    <img src="https://img.shields.io/badge/Express-text?style=for-the-badge&logo=express&color=204456" />
 </div>
 
