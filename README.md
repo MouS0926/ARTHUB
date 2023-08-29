@@ -45,7 +45,7 @@ User Features :
 Clone the project
 
 ```bash
-  git clone https://github.com/mdkamran-git/heady-rabbits-8957.git
+  git clone https://github.com/MouS0926/ARTHUB.git
 ```
 
 Go to the project directory
