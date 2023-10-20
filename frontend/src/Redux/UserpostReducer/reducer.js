@@ -1,6 +1,6 @@
 // reducer.js
 
-import { GET_USER_POST_FAIL, GET_USER_POST_REQ, GET_USER_POST_SUCCESS, USER_EDIT } from "./actionType";
+import { GET_USER_POST_FAIL, GET_USER_POST_REQ, GET_USER_POST_SUCCESS, USER_DELETE, USER_EDIT } from "./actionType";
 
 const initialState = {
   isLoading: false,
@@ -41,6 +41,15 @@ export const reducer = (state = initialState, { type, payload }) => {
         ...state,
         isLoading: false,
         isError: true,
+      };
+    }
+
+    case USER_DELETE: {
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+        AllUserpost: payload,
       };
     }
    

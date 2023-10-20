@@ -12,6 +12,7 @@ import { getAllProducts } from "../Redux/Products/action";
 
 export default function Home() {
 const [page,setPage]=useState(1)
+const [sortOrder, setSortOrder] = useState("asc");
 const dispatch=useDispatch()
 const post=useSelector((store) => store.singleData.Alldata);
 const isloading=useSelector((store)=>store.singleData.isLoading)
@@ -21,15 +22,17 @@ const searchQuery = useSelector((store) => store.singleData.searchQuery);
 const totalPage=Math.ceil(totalData/9)
 
     useEffect(() => {
-        dispatch(getAllProducts(page,searchQuery));
-      }, [page,searchQuery]);
+        dispatch(getAllProducts(page,searchQuery,sortOrder));
+      }, [page,searchQuery,sortOrder]);
     
 
       
 const handlePageChange=(value)=>{
   setPage(prev=>prev+value)
 }
-
+const toggleSortOrder = () => {
+  setSortOrder(sortOrder === "asc" ? "desc" : "asc"); // Toggle between "asc" and "desc"
+};
 console.log(post);
   return (
     <div>
@@ -39,10 +42,17 @@ console.log(post);
       <Box className="heading" bg={useColorModeValue('blackAlpha.100', 'blackAlpha.500')}>
            Home
       </Box>
-
-
-         
+   
+      <Box className="heading">
+          Sort by Rating:
+          <br />
+          <input type="radio" checked={sortOrder === "asc"} onChange={toggleSortOrder} /> Ascending
+         &nbsp;
+          <input type="radio" checked={sortOrder === "desc"} onChange={toggleSortOrder} /> Descending
+        </Box>
+      
             <div className='homediv'>
+          
 
                   {
 

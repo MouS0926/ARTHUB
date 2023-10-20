@@ -111,9 +111,9 @@ export default function Navbar() {
                
 
 
-                <Link to="/product" >
+                {/* <Link to="/product" >
                     Shop
-                </Link>
+                </Link> */}
 {/************* * search **************/}
       <div className="searchDiv">
 

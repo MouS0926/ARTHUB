@@ -1,12 +1,12 @@
 import { DATA_ERROR, DATA_SUCCESS, DATA_REQUEST, ADD_POST, SET_SEARCH_QUERY } from "./actionType";
 import axios from "axios";
 
-export const getAllProducts = (page, searchQuery) => (dispatch) => {
+export const getAllProducts = (page, searchQuery,sortOrder) => (dispatch) => {
   dispatch({ type: DATA_REQUEST });
 
   
-  const queryParams = `?page=${page}${searchQuery ? `&search=${searchQuery}` : ''}`;
-
+  // const queryParams = `?page=${page}${searchQuery ? `&search=${searchQuery}` : ''}`;
+  const queryParams = `?page=${page}${searchQuery ? `&search=${searchQuery}` : ''}${sortOrder ? `&sortBy=rating&sortOrder=${sortOrder}` : ''}`;
   axios
     .get(`https://arthub-be.onrender.com/posts${queryParams}`)
     .then((data) => {

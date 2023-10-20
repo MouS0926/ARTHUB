@@ -72,7 +72,7 @@ export default function AddPost() {
             <option value="Digital Art">Digital Art</option>
           
         </select>
-        <input type="text" name="rating" value={postData.rating} placeholder='rating' onChange={handleChange}/>
+        <input type="number" name="rating" value={postData.rating} placeholder='rating' onChange={handleChange}/>
         <input type="text" name="price"value={postData.price} placeholder='price' onChange={handleChange} />
         <button type='submit' onClick={handleAddPost} >Submit Post</button>
         </form>

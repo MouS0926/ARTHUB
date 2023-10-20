@@ -3,3 +3,5 @@ export const GET_USER_POST_SUCCESS = 'GET_USER_POST_SUCCESS';
 export const GET_USER_POST_FAIL = 'GET_USER_POST_FAIL';
 
 export const USER_EDIT = 'USER_EDIT';
+
+export const USER_DELETE = 'USER_DELETE';
