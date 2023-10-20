@@ -11,7 +11,7 @@ Whether you're an appreciator or a creator, ARTHUB provides an immersive space t
 
 ## Deployed Link
 [Deployed Link:  ARTHUB](https://arthub-rosy.vercel.app/)
-
+Sample User Details: rimi@mail.com  , password: rimi
 
 
 ## Tech Stack
