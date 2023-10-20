@@ -47,7 +47,7 @@ export default function Allroutes() {
 
       </Route>
 
-      <Route path='/editpostt' element={
+      <Route path='/editpost/:id' element={
           <PrivateRoute>
                <EditPost/>
          </PrivateRoute>

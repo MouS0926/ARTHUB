@@ -106,3 +106,18 @@ float: right;
   transition: min-width 0.2s;
 }
 
+/* //responsive */
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+  .homediv{
+    width: 96%;
+    padding: 40px 20px;
+ display: grid;
+ align-self: flex-end;
+grid-template-columns: repeat(1,1fr);
+
+
+/* column-count: 3; */
+gap: 10px;
+}
+}

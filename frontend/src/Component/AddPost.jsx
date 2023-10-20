@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addPost } from '../Redux/Products/action';
 import { useToast } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import { getUsersPostAction } from '../Redux/UserpostReducer/action';
 export default function AddPost() {
     const token = useSelector((store) => store.Loginreducer.token); 
     const dispatch=useDispatch()
@@ -35,7 +36,7 @@ export default function AddPost() {
         e.preventDefault();
         const currentDate = new Date(); 
         postData.date = currentDate.toISOString();
-
+       
         const headers = {
           Authorization: `Bearer ${token}`, 
         };
@@ -50,6 +51,7 @@ export default function AddPost() {
             duration: 4000,
             isClosable: true,
           })
+        //   dispatch(getUsersPostAction(token))
       };
 
 

@@ -1,22 +1,38 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUsersPostAction } from '../Redux/UserpostReducer/action'
 import "./Mypost.css"
 import { AiOutlineStar } from 'react-icons/ai'
-import { Box, Button, Card, CardBody, Heading, Text } from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { Box, Button, Card, CardBody, FormControl, FormLabel, Heading, Input, Text, useDisclosure } from '@chakra-ui/react'
+import { Link, useParams } from 'react-router-dom'
 import { FaHandPointRight } from 'react-icons/fa'
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from '@chakra-ui/react'
+
 
 export default function Mypost() {
 const dispatch=useDispatch()
 const token = useSelector((store) => store.Loginreducer.token);
 const userpost=useSelector((store) => store.UserPostReducer.AllUserpost);
+const { isOpen, onOpen, onClose } = useDisclosure()
+const {id}=useParams()
+
 
 useEffect(() => {
   dispatch(getUsersPostAction(token));
 }, [dispatch, token]);
 
-console.log(userpost);
+// console.log(userpost);
+
+
+
 
 
 if(userpost.length==0){
@@ -36,6 +52,16 @@ if(userpost.length==0){
 <div>
 
 
+
+
+
+   
+     
+
+  
+
+
+
 <Heading as='h3' size='lg'>
    My Post
   </Heading>
@@ -53,12 +79,20 @@ if(userpost.length==0){
           <p><b>Rating:</b> {el.rating}</p>
           
 
-          <Link to="/">
-          {/* <Button colorScheme='teal' size='xs'>
+          <Link to={`/editpost/${el._id}`}>
+          <Button colorScheme='teal' size='xs'>
                   Edit
-          </Button> */}
-            
+          </Button>
+          &nbsp;
+          <Button colorScheme='red' size='xs'>
+                  Delete
+          </Button>
+
+
           </Link>
+       
+            
+         
        
           </div>
       ))

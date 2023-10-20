@@ -33,3 +33,10 @@ display: flex;
    
     border: 1px solid #067439 !important;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+    /* STYLES HERE */
+    .navP{
+        width: 100%;
+    }
+}

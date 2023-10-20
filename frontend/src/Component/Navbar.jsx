@@ -199,10 +199,10 @@ export default function Navbar() {
               variant={'solid'}
               colorScheme={'teal'}
               size={'sm'}
-              mr={4}
+              
               leftIcon={<AddIcon />}>
 
-               Submit
+              
               
             </Button>
             </Link>

@@ -37,3 +37,20 @@ background: linear-gradient(0deg, rgba(1,13,23,1) 0%, rgba(1,1,4,1) 0%, rgba(0,0
 .fAbout{
   padding:10px 20px;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+  /* STYLES HERE */
+
+  .footerdiv {
+    width: 96%;
+
+    
+ display: grid;
+grid-template-columns: repeat(1,1fr);
+/* background-color: rgb(17, 16, 16); */
+
+
+
+}
+ 
+}
