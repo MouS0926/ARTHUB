@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineStar } from 'react-icons/ai'
 import { RiFolderUserFill } from 'react-icons/ri'
 
-export default function Post({image,title,rating,publisher,_id}) {
+export default function Post({image,title,rating,publisher,_id,category}) {
   return (
     <div>
         <div class="container">
@@ -20,6 +20,12 @@ export default function Post({image,title,rating,publisher,_id}) {
                          <RiFolderUserFill style={{ marginRight: '8px',color:"#30c9c3" }} />
                           {publisher}
                       </p>
+
+                      <p style={{ display: 'flex', alignItems: 'center' }}>
+                         {/* <RiFolderUserFill style={{ marginRight: '8px',color:"#30c9c3" }} /> */}
+                        Category:  {category}
+                      </p>
+
                     </div>
               </div>
 

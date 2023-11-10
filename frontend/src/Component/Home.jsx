@@ -13,6 +13,7 @@ import { getAllProducts } from "../Redux/Products/action";
 export default function Home() {
 const [page,setPage]=useState(1)
 const [sortOrder, setSortOrder] = useState("asc");
+const [selectedCategory, setSelectedCategory] = useState("");//filter by category
 const dispatch=useDispatch()
 const post=useSelector((store) => store.singleData.Alldata);
 const isloading=useSelector((store)=>store.singleData.isLoading)
@@ -22,8 +23,8 @@ const searchQuery = useSelector((store) => store.singleData.searchQuery);
 const totalPage=Math.ceil(totalData/9)
 
     useEffect(() => {
-        dispatch(getAllProducts(page,searchQuery,sortOrder));
-      }, [page,searchQuery,sortOrder]);
+        dispatch(getAllProducts(page,searchQuery,sortOrder,selectedCategory));
+      }, [page,searchQuery,sortOrder,selectedCategory]);
     
 
       
@@ -33,12 +34,18 @@ const handlePageChange=(value)=>{
 const toggleSortOrder = () => {
   setSortOrder(sortOrder === "asc" ? "desc" : "asc"); // Toggle between "asc" and "desc"
 };
+
+const handleCategoryChange = (event) => {
+  setSelectedCategory(event.target.value);
+};
+
 console.log(post);
   return (
     <div>
 
       <div className="homeSection">
 
+    
       <Box className="heading" bg={useColorModeValue('blackAlpha.100', 'blackAlpha.500')}>
            Home
       </Box>
@@ -48,7 +55,19 @@ console.log(post);
           <br />
           <input type="radio" checked={sortOrder === "asc"} onChange={toggleSortOrder} /> Ascending
          &nbsp;
-          <input type="radio" checked={sortOrder === "desc"} onChange={toggleSortOrder} /> Descending
+          <input type="radio" checked={sortOrder === "desc"} onChange={toggleSortOrder} /> Descending 
+        </Box>
+
+        <Box className="heading">
+          Filter by Category:
+          <br />
+          <select value={selectedCategory} onChange={handleCategoryChange}>
+            <option value="">All</option>
+            <option value="Photography">Photography</option>
+            <option value="Art">Art</option>
+            <option value="Digital Art">Digital Art</option>
+           
+          </select>
         </Box>
       
             <div className='homediv'>
