@@ -10,8 +10,9 @@ Whether you're an appreciator or a creator, ARTHUB provides an immersive space t
 
 
 ## Deployed Link
-[Deployed Link:  ARTHUB](https://arthub-rosy.vercel.app/)
-[API Linj : ](https://arthub-be.onrender.com/)
+[Deployed Link:  ARTHUB](https://arthub-rosy.vercel.app/) 
+<br/>
+[API Link : ](https://arthub-be.onrender.com/)
 Sample User Details: rimi@mail.com  , password: rimi
 
 
