@@ -100,8 +100,13 @@ Add Post
           <Button colorScheme='red' size='xs' onClick={() => handleDelete(el._id)}>
                   Delete
           </Button>
-       
-            
+          &nbsp;
+          <Link to={`/post/${el._id}`}>
+
+          <Button colorScheme='yellow' size='xs'>
+          View
+          </Button>
+          </Link>
          
        
           </div>

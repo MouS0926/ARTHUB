@@ -10,6 +10,8 @@ import AddPost from '../Component/AddPost'
 import PrivateRoute from './PrivateRoute'
 import Mypost from '../Component/Mypost'
 import EditPost from '../Component/EditPost'
+import SinglePost from '../Component/SinglePost'
+
 
 
 export default function Allroutes() {
@@ -21,7 +23,13 @@ export default function Allroutes() {
         {/* <Route path='/login' element={<Login/>}></Route> */}
         <Route path='/signup' element={<Signup/>   }></Route>
         <Route path='/allproduct' element={<AllProducts/>   }></Route>
-
+        <Route path="/post/:id" element={
+          <PrivateRoute>
+            <SinglePost/> 
+          </PrivateRoute>
+        
+        
+        } ></Route>
         <Route path='/login' element={<Login2/>  }></Route>
         <Route path='/addpost' element={
           <PrivateRoute>

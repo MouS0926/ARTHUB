@@ -8,6 +8,7 @@ import { RiFolderUserFill } from "react-icons/ri";
 import {Box, Button, Flex, HStack, Heading, Skeleton, useColorModeValue} from '@chakra-ui/react'
 import Post from "./Post";
 import { getAllProducts } from "../Redux/Products/action";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -84,7 +85,14 @@ console.log(post);
                         :
                     post && post.map((el)=>(
 
-                          <Post key={el._id} {...el}/>
+                          // <Post key={el._id} {...el}/>
+
+                          <div >
+                            <Link key={el._id} to={`/post/${el._id}`}>
+                {/* Wrap the post title with Link */}
+                <Post {...el} />
+              </Link>
+                            </div>
                       ))
                 }
 
