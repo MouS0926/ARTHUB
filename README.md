@@ -58,7 +58,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd heady-rabbits-8957
+  cd ARTHUB
 ```
 
 Install dependencies
@@ -66,6 +66,12 @@ Install dependencies
 ```bash
   npm install 
 
+```
+
+Start Frontend
+
+```bash
+npm run start
 ```
 
 Start the server
