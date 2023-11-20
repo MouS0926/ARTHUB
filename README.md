@@ -40,6 +40,7 @@ User Features :
 - Image Browsing 
 - Search by Title
 - User can Post their own Post, Manage Post
+- User can like any post and add comments
 - Pagination in Post Section
 - Sort Posts By Rating and Filter By Category 
 
