@@ -31,3 +31,29 @@
     font-weight: 500;
     padding: 5px;
 }
+
+
+@media screen and (min-device-width:310px) and (max-device-width: 481px)
+{
+    .postform,.editForm{
+        width: 90%;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-device-width:482px) and (max-device-width: 576px)
+{
+    .postform,.editForm{
+        width: 90%;
+        margin-left: 40px;
+    }
+    
+}
+
+@media screen and (min-device-width:577px) and (max-device-width: 767px)
+{
+    .postform,.editForm{
+        width: 70%;
+        margin-left: 40px;
+    }
+}

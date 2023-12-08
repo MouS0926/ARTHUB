@@ -136,6 +136,16 @@ grid-template-columns: repeat(1,1fr);
 /* column-count: 3; */
 gap: 10px;
 }
+
+.heading {
+  width: 96%;
+  font-size: 20px;
+  align-self: flex-end;
+  text-align: left;
+  padding: 20px 12px 15px 21px;
+  /* background-color: #131314; */
+  font-weight: 500;
+}
 }
 
 @media screen and (min-device-width: 577px) and (max-device-width:767px) { 
