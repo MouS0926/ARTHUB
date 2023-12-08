@@ -10,8 +10,13 @@ Whether you're an appreciator or a creator, ARTHUB provides an immersive space t
 
 
 ## Deployed Link
-[Deployed Link:  ARTHUB](https://arthub-rosy.vercel.app/)
-Sample User Details: rimi@mail.com  , password: rimi
+[Deployed Link:  ARTHUB](https://arthub-rosy.vercel.app/) 
+<br/>
+[API Link : ARTHUB API](https://arthub-be.onrender.com/)
+<br/><br/>
+
+<b>Sample User Details:</b> <br/>
+ User Id: rimi@mail.com  , password: rimi
 
 
 ## Tech Stack
@@ -35,6 +40,7 @@ User Features :
 - Image Browsing 
 - Search by Title
 - User can Post their own Post, Manage Post
+- User can like any post and add comments
 - Pagination in Post Section
 - Sort Posts By Rating and Filter By Category 
 
@@ -52,7 +58,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd heady-rabbits-8957
+  cd ARTHUB
 ```
 
 Install dependencies
@@ -60,6 +66,12 @@ Install dependencies
 ```bash
   npm install 
 
+```
+
+Start Frontend
+
+```bash
+npm run start
 ```
 
 Start the server
