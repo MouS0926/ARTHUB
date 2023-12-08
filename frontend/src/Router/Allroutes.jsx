@@ -11,6 +11,8 @@ import PrivateRoute from './PrivateRoute'
 import Mypost from '../Component/Mypost'
 import EditPost from '../Component/EditPost'
 import SinglePost from '../Component/SinglePost'
+import Creator from '../Component/Creator'
+import SingleCreatorDetails from '../Component/SingleCreatorDetails'
 
 
 
@@ -63,6 +65,8 @@ export default function Allroutes() {
 
       </Route>
 
+      <Route path='/creators' element={ <Creator/> }> </Route>
+      <Route path='/creators/:id' element={ <SingleCreatorDetails/> }> </Route>
 
     </Routes>
 

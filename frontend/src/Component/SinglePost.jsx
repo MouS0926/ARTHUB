@@ -25,7 +25,7 @@ const SinglePost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/posts/post/${id}`);
+        const response = await axios.get(`https://arthub-be.onrender.com/posts/post/${id}`);
         setPost(response.data);
         setIsLoading(false);
         console.log(response);
@@ -41,7 +41,7 @@ const SinglePost = () => {
 
   const handleLikeClick = async () => {
     try {
-      const response = await axios.post(`http://localhost:8080/posts/like/${id}`, null, {
+      const response = await axios.post(`https://arthub-be.onrender.com/posts/like/${id}`, null, {
         headers: {
           Authorization: `Bearer ${token}`, // Replace with your actual token
         },
@@ -60,7 +60,7 @@ const SinglePost = () => {
   const handleCommentSubmit = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:8080/posts/comment/${id}`,
+        `https://arthub-be.onrender.com/posts/comment/${id}`,
         { comment: newComment },
         {
           headers: {

@@ -1,0 +1,9 @@
+export const CREATOR_REQUEST = "CREATOR_REQUEST";
+export const CREATOR_SUCCESS = "CREATOR_SUCCESS";
+export const CREATOR_ERROR = "CREATOR_ERROR";
+
+//single creator details page
+export const CREATOR_POST_ERROR = "CREATOR_POST_ERROR";
+export const CREATOR_POST_SUCCESS = "CREATOR_POST_SUCCESS";
+export const CREATOR_POST_REQUEST = "CREATOR_POST_REQUEST";
+

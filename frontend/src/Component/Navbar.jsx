@@ -111,9 +111,9 @@ export default function Navbar() {
                
 
 
-                {/* <Link to="/product" >
-                    Shop
-                </Link> */}
+                <Link to="/creators" >
+                    Creators
+                </Link>
 {/************* * search **************/}
       <div className="searchDiv">
 
@@ -214,8 +214,8 @@ export default function Navbar() {
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
              
-                <NavLink>Home</NavLink>
-               <NavLink>Home</NavLink>
+                {/* <NavLink to="/">Home</NavLink> */}
+               {/* <NavLink>Home</NavLink> */}
             </Stack>
           </Box>
         ) : null}
