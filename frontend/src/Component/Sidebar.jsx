@@ -6,6 +6,7 @@ import { AiFillBulb, AiFillHome, IconName } from "react-icons/ai";
 
 import "./Home.css"
 import { Link } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 
 
 
@@ -48,6 +49,17 @@ export default function Sidebar() {
             </NavText>
         </NavItem>
 
+        <NavItem eventKey="home">
+            <NavIcon>
+               <FaUser style={{ fontSize: '1.75em' }}/>
+              
+            </NavIcon>
+            <NavText>
+              <Link to="/creators">
+              Creators
+                </Link>
+            </NavText>
+        </NavItem>
       
 
        
