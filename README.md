@@ -80,5 +80,16 @@ Start the server
   npm run server
 ```
 
+## Screenshots
+
+![Screenshot 1](https://github.com/MouS0926/ARTHUB--Image-posting-website-/blob/main/frontend/src/image/home.jpeg)
+*Home Page*
+
+![Screenshot 1](https://github.com/MouS0926/ARTHUB--Image-posting-website-/blob/main/frontend/src/image/creators.jpeg)
+*Creator Page*
+
+![Screenshot 1](https://github.com/MouS0926/ARTHUB--Image-posting-website-/blob/main/frontend/src/image/user-post.jpeg)
+*User Post*
+
 
 
